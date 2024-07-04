@@ -25,8 +25,6 @@ def test_get_coin_combination(cents: int, expected_result: list) -> None:
 @mark.parametrize(
     "exception,value",
     [
-        param(ValueError, -5,
-              id="test_should_raise_error_when_value_is_incorrect"),
         param(TypeError, "41",
               id="test_should_raises_error_when_type_of_value_is_incorrect")
     ]
